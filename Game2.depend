@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1679674222 source:c:\users\msi\desktop\c++\game2\src\core\engine.cpp
+	"Engine.h"
+
+1679675903 c:\users\msi\desktop\c++\game2\src\core\engine.h
+	<iostream>
+	"SDL.h"
+	"SDL_image.h"
+
+1679675591 source:c:\users\msi\desktop\c++\game2\main.cpp
+	"Engine.h"
+
+1679672873 source:c:\users\msi\desktop\c++\game2\src\graphics\texturemanager.cpp
+	"TextureManager.h"
+
+1679672873 c:\users\msi\desktop\c++\game2\src\graphics\texturemanager.h
+
