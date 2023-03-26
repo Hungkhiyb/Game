@@ -1,6 +1,7 @@
 #include "Engine.h"
 
 Engine* Engine::s_Instance = nullptr;
+Warrior* player = nullptr;
 
 Engine::Engine()
 {
@@ -34,6 +35,9 @@ bool Engine::Init()
         return false;
     }
 
+    TextureManager::GetInstance()->LoadMedia("player", "assets/player-idle.png");
+    player = new Warrior(new Properties("player", 200, 200, 32, 32));
+
     return m_IsRunning = true;
 }
 
@@ -51,7 +55,7 @@ void Engine::Events()
 
 void Engine::Update()
 {
-
+    player->Update(0);
 }
 
 void Engine::Render()
@@ -59,6 +63,7 @@ void Engine::Render()
     SDL_SetRenderDrawColor(m_Renderer, 0, 255, 255, 255);
     SDL_RenderClear(m_Renderer);
 
+    player->Draw();
     SDL_RenderPresent(m_Renderer);
 }
 

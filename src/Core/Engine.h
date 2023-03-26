@@ -5,6 +5,11 @@
 #include "SDL.h"
 #include "SDL_image.h"
 
+#include "TextureManager.h"
+#include "Vector2D.h"
+#include "Tranform.h"
+#include "Warrior.h"
+
 #define SCREEN_WIDTH 960
 #define SCREEN_HEIGHT 640
 

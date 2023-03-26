@@ -1,17 +1,50 @@
 # depslib dependency file v1.0
-1679674222 source:c:\users\msi\desktop\c++\game2\src\core\engine.cpp
+1679815761 source:c:\users\msi\desktop\c++\game2\src\core\engine.cpp
 	"Engine.h"
 
-1679675903 c:\users\msi\desktop\c++\game2\src\core\engine.h
+1679815247 c:\users\msi\desktop\c++\game2\src\core\engine.h
 	<iostream>
 	"SDL.h"
 	"SDL_image.h"
+	"TextureManager.h"
+	"Vector2D.h"
+	"Tranform.h"
+	"Warrior.h"
 
-1679675591 source:c:\users\msi\desktop\c++\game2\main.cpp
+1679816307 source:c:\users\msi\desktop\c++\game2\main.cpp
 	"Engine.h"
 
-1679672873 source:c:\users\msi\desktop\c++\game2\src\graphics\texturemanager.cpp
+1679815247 source:c:\users\msi\desktop\c++\game2\src\graphics\texturemanager.cpp
+	"TextureManager.h"
+	"Engine.h"
+
+1679764871 c:\users\msi\desktop\c++\game2\src\graphics\texturemanager.h
+	<string>
+	<map>
+	<SDL.h>
+
+1679813711 c:\users\msi\desktop\c++\game2\src\physics\vector2d.h
+	<iostream>
+
+1679813668 c:\users\msi\desktop\c++\game2\src\physics\tranform.h
+	<string>
+	"Vector2D.h"
+
+1679814337 c:\users\msi\desktop\c++\game2\src\characters\warrior.h
+	"Character.h"
 	"TextureManager.h"
 
-1679672873 c:\users\msi\desktop\c++\game2\src\graphics\texturemanager.h
+1679813601 c:\users\msi\desktop\c++\game2\src\characters\character.h
+	"GameObject.h"
+	<string>
+
+1679813801 c:\users\msi\desktop\c++\game2\src\object\gameobject.h
+	"IObject.h"
+	"Tranform.h"
+	"SDL.h"
+
+1679801307 c:\users\msi\desktop\c++\game2\src\object\iobject.h
+
+1679816154 source:c:\users\msi\desktop\c++\game2\src\characters\warrior.cpp
+	"Warrior.h"
 
