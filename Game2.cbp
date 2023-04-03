@@ -17,6 +17,14 @@
 					<Add directory="Core" />
 					<Add directory="src/Graphics" />
 					<Add directory="src/Physics" />
+					<Add directory="src/Object" />
+					<Add directory="src/Characters" />
+					<Add directory="src/Animation" />
+					<Add directory="src/Inputs" />
+					<Add directory="src/Map" />
+					<Add directory="src/Vendor/TinyXML" />
+					<Add directory="src/Camera" />
+					<Add directory="src/Collision" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -30,6 +38,12 @@
 					<Add directory="Core" />
 					<Add directory="src/Graphics" />
 					<Add directory="src/Physics" />
+					<Add directory="src/Object" />
+					<Add directory="src/Characters" />
+					<Add directory="src/Animation" />
+					<Add directory="src/Inputs" />
+					<Add directory="src/Map" />
+					<Add directory="src/Camera" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -41,12 +55,40 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Animation/Animation.cpp" />
+		<Unit filename="src/Animation/Animation.h" />
+		<Unit filename="src/Camera/Camera.cpp" />
+		<Unit filename="src/Camera/Camera.h" />
+		<Unit filename="src/Characters/Character.h" />
+		<Unit filename="src/Characters/Warrior.cpp" />
+		<Unit filename="src/Characters/Warrior.h" />
+		<Unit filename="src/Collision/CollisionHandler.cpp" />
+		<Unit filename="src/Collision/CollisionHandler.h" />
 		<Unit filename="src/Core/Engine.cpp" />
 		<Unit filename="src/Core/Engine.h" />
 		<Unit filename="src/Graphics/TextureManager.cpp" />
 		<Unit filename="src/Graphics/TextureManager.h" />
+		<Unit filename="src/Inputs/Input.cpp" />
+		<Unit filename="src/Inputs/Input.h" />
+		<Unit filename="src/Map/GameMap.h" />
+		<Unit filename="src/Map/Layer.h" />
+		<Unit filename="src/Map/MapParser.cpp" />
+		<Unit filename="src/Map/MapParser.h" />
+		<Unit filename="src/Map/TileLayer.cpp" />
+		<Unit filename="src/Map/TileLayer.h" />
+		<Unit filename="src/Object/GameObject.h" />
+		<Unit filename="src/Object/IObject.h" />
+		<Unit filename="src/Physics/Collider.h" />
+		<Unit filename="src/Physics/Point.h" />
+		<Unit filename="src/Physics/RigidBody.h" />
 		<Unit filename="src/Physics/Tranform.h" />
 		<Unit filename="src/Physics/Vector2D.h" />
+		<Unit filename="src/Vendor/TinyXML/tinystr.cpp" />
+		<Unit filename="src/Vendor/TinyXML/tinystr.h" />
+		<Unit filename="src/Vendor/TinyXML/tinyxml.cpp" />
+		<Unit filename="src/Vendor/TinyXML/tinyxml.h" />
+		<Unit filename="src/Vendor/TinyXML/tinyxmlerror.cpp" />
+		<Unit filename="src/Vendor/TinyXML/tinyxmlparser.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

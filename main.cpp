@@ -3,27 +3,27 @@
 int main(int argc, char** argv)
 {
     const int FPS = 60;
-    int frame = SDL_GetTicks();
-    int frameTime = 1000 / 60;
-    int frameCount = 1;
-    int i = 1;
+    const int frameTime = 1000 / FPS;
+    int frameStart, frameEnd, frame;
+    int i = 0;
 
     Engine::GetInstance()->Init();
 
     while(Engine::GetInstance()->IsRunning())
     {
+        frameStart = SDL_GetTicks();
+
         Engine::GetInstance()->Events();
         Engine::GetInstance()->Update();
         Engine::GetInstance()->Render();
-/*
-        frame = SDL_GetTicks() - frame;
+
+        frameEnd = SDL_GetTicks();
+        frame = frameEnd - frameStart;
+
         if(frameTime > frame)
-            SDL_Delay(frameTime - frame);*/
-        if(frameCount % 60 == 0){
-            std::cout << i << std::endl;
-            i++;
-        }
-        frameCount++;
+            SDL_Delay(frameTime - frame);
+
+
     }
 
     Engine::GetInstance()->Clean();
